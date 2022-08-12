@@ -1,0 +1,50 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <p class="h3 fw-bold text-danger mt-3">Edit Contact</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tenetur amet deleniti facilis, cum exercitationem rem harum quos officiis, aliquam distinctio unde adipisci tempora ipsa dolores voluptate ratione sit voluptatum?</p>
+    </div>
+  </div>
+</div>
+
+<!---Contact Form-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <form ((submit))="submitUpdate()">
+        <div class="mb-2">
+          <input [(ngModel)]="contact.name" [value]="contact.name"  name="name"       type="text" class="form-control" placeholder="Name" type="text">
+        </div>
+        <div class="mb-2">
+          <input [(ngModel)]="contact.email" [value]="contact.name"  name="email"  type="text" class="form-control" placeholder="Email" type="email">
+        </div>
+        <div class="mb-2">
+          <input [(ngModel)]="contact.photo" [value]="contact.name"  name="photo"   type="text" class="form-control" placeholder="Photo url" type="text">
+        </div>
+        <div class="mb-2">
+          <input [(ngModel)]="contact.mobile" [value]="contact.name"  name="mobile"  type="text" class="form-control" placeholder="Mobile Number" type="number">
+        </div>
+        <div class="mb-2">
+          <input [(ngModel)]="contact.company" [value]="contact.name"  name="company"   type="text" class="form-control" placeholder="company" type="text">
+        </div>
+        <div class="mb-2">
+          <input [(ngModel)]="contact.title" [value]="contact.name"  name="title"  type="text" class="form-control" placeholder="title" type="text">
+        </div>
+        <div class="mb-2">
+          <select class="form-control">
+            <option value="">Select a groupe </option>
+          </select>
+        </div>
+        <div class="mb-2">
+          <input type="text" class="btn btn-danger" placeholder="Create" type="submit" value="Update">
+          <a routerLink="/" class="btn btn-dark ms-3">Close </a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <pre>{{contact |json}}</pre>
+
+</div>

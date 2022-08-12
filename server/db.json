@@ -1,0 +1,32 @@
+{
+  "contacts": [
+    {
+      "id": "654567899",
+      "name": "Jhon smith",
+      "company": "Youtube",
+      "email": "behakalal@gmail.com",
+      "title": "youtuber",
+      "mobile": "34567788",
+      "photo": "null",
+      "groupId": 1
+    }
+  ],
+  "Groupe": [
+    {
+      "id": "1",
+      "name": "Friend"
+    },
+    {
+      "id": "2",
+      "name": "Collegue"
+    },
+    {
+      "id": "3",
+      "name": "Family"
+    },
+    {
+      "id": "4",
+      "name": "Service"
+    }
+  ]
+}
